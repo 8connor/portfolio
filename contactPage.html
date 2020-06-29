@@ -11,58 +11,73 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-<body>
+<body class='grey lighten-2'>
     <nav>
         <div class="nav-wrapper grey darken-4">
-            <a href="#home" class="brand-logo"><img src="assets/images/devLogo.png" height="50px" class="logo"></a>
+            <a href="./index.html" class="brand-logo"><img src="assets/images/devLogo.png" height="50px" class="logo"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#home">Home</a></li>
-            </ul>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="contactPage.html">Contact</a></li>
+                <li><a href="./index.html">Home</a></li>
             </ul>
         </div>
     </nav>
+
     <div class="parallax-container">
         <div class="parallax"><img src="assets/images/parallax.jpg" height="4000px" width="4000px"></div>
         <div class="container animate__animated animate__backInDown" id="home">
             <div class="row center">
                 <header class="col s12 m12 l12 pink-text text-lighten-1">
-                    <h1>Hello, my name is James Hooven and I'm a Full-Stack Web Developer.</h1>
-                    <a href="#cardBox"
-                        class="waves-effect waves-light btn-large animate__animated animate__backInDown animate__slow pink lighten-1">Show
-                        me
-                        more!</a>
+                    <h1>You can contact me here.</h1>
                 </header>
             </div>
         </div>
     </div>
-    <article>
-        <div class='container cardContainer grey lighten-1 z-depth-4' id='cardBox'>
-            <div class='row'>
-                <div class="card cardMargin grey darken-4 col s12 m4 l4">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="assets/images/homefinderv2.PNG">
+
+    <div class='container contact_container'>
+        <div class="row">
+            <div class="col s12 m12 l12 grey darken-4 z-depth-4">
+                <form>
+                    <div class="input-field">
+                        <i class="material-icons prefix">person</i>
+                        <input type="text" id="firstName">
+                        <label for="firstName">First Name</label>
                     </div>
-                    <div class="card-content">
-                        <span class="card-title activator pink-text text-lighten-1">Home Finder<i
-                                class="material-icons right">more_vert</i></span>
-                        <p><a href="https://leivanoe1011.github.io/home_finder_v2/" target="_blank"
-                                class="pink-text text-lighten-1">Check out the website!</a></p>
+
+                    <div class="input-field">
+                        <i class="material-icons prefix">person</i>
+                        <input type="text" id="lastName">
+
+                        <label for="lastName">Last Name</label>
                     </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Home Finder<i
-                                class="material-icons right">close</i></span>
-                        <p>This project was made to showcase what a realtor website may look like. We created the
-                            website using a more sleek and modern design that stands out from most websites. The website
-                            was made with all devices in mind so that customers can access the website on any of their
-                            devices.</p>
+
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your Email</label>
                     </div>
-                </div>
+
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+
+                    <div class="input-field">
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">Schedule Date</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" id="time" class="timepicker">
+                        <label for="time">Schedule Time</label>
+                    </div>
+
+                    <div id="send_message" class="input-field center">
+                        <button class="btn pink lighten-1">Submit</button>
+                    </div>
+                </form>
             </div>
         </div>
+    </div>
 
-    </article>
     <footer class="page-footer grey darken-4">
         <div class="container">
             <div class="row">
