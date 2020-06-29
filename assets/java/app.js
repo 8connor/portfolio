@@ -4,7 +4,10 @@ var ready = (callback) => {
 }
 
 ready(() => {
+    M.AutoInit();
     M.Parallax.init(document.querySelectorAll(".parallax"));
+    M.Sidenav.init(document.querySelectorAll('.sidenav'));
+
 });
 
 

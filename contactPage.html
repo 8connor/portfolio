@@ -14,20 +14,43 @@
 <body class='grey lighten-2'>
     <nav>
         <div class="nav-wrapper grey darken-4">
-            <a href="./index.html" class="brand-logo"><img src="assets/images/devLogo.png" height="50px" class="logo"></a>
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="./index.html">Home</a></li>
+            <a href="#home" class="brand-logo"><img src="assets/images/devLogo.png" height="50px" class="logo"></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#home">Home</a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="contactPage.html">Contact</a></li>
             </ul>
         </div>
-    </nav>
 
-    <div class="parallax-container">
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contactPage.html">Contact</a></li>
+    </ul>
+
+
+    <div class="parallax-container mainpara">
         <div class="parallax"><img src="assets/images/parallax.jpg" height="4000px" width="4000px"></div>
         <div class="container animate__animated animate__backInDown" id="home">
             <div class="row center">
                 <header class="col s12 m12 l12 pink-text text-lighten-1">
                     <h1>You can contact me here.</h1>
                 </header>
+            </div>
+        </div>
+    </div>
+
+    <div class='hide-on-medium'>
+        <div class="parallax-container">
+            <div class="parallax"><img src="assets/images/parallax.jpg" height="4000px" width="4000px"></div>
+            <div class="container animate__animated animate__backInDown grey darken-4 mobileWelcome" id="home">
+                <div class="row center">
+                    <header class="col s12 m12 l12 pink-text text-lighten-1">
+                        <h4> You can contact me here!</h4>
+                    </header>
+                </div>
             </div>
         </div>
     </div>
